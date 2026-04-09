@@ -42,3 +42,15 @@ Open `http://localhost:3000`.
 - Booking is routed through FareHarbor links.
 - Contact and newsletter forms use placeholder server actions and should be connected before launch.
 - Replace placeholder artwork and legal details before going live.
+
+## Cloudflare deployment
+
+This project is prepared for Cloudflare Workers with OpenNext.
+
+Useful commands:
+
+```bash
+npm run preview
+npm run deploy
+npm run cf-typegen
+```
