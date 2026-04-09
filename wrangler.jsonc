@@ -8,10 +8,6 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
-  "build": {
-    "command": "npx opennextjs-cloudflare build",
-    "watch_dir": ["app", "components", "content", "lib", "public", "next.config.ts", "open-next.config.ts"]
-  },
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
