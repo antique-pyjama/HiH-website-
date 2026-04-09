@@ -1,0 +1,22 @@
+[
+  {
+    "question": "How do you define halal-friendly on these tours?",
+    "answer": "Every tour includes explicit halal suitability notes. Food tours focus on halal-vetted venues or clearly described sourcing, while non-food tours call out relevant amenities and practical considerations."
+  },
+  {
+    "question": "Do I book directly on this website?",
+    "answer": "For the MVP, all booking buttons route directly to FareHarbor. That keeps the experience simple, secure, and operationally lightweight."
+  },
+  {
+    "question": "Are these tours suitable for families?",
+    "answer": "Yes. The routes are designed to feel calmer and more flexible than nightlife-oriented tourism, with pacing that suits couples, families, and thoughtful first-time visitors."
+  },
+  {
+    "question": "Can I ask questions before booking?",
+    "answer": "Absolutely. Use the contact form to ask about group fit, accessibility, prayer-time considerations, or private requests before you reserve."
+  },
+  {
+    "question": "Do you offer private tours or custom itineraries?",
+    "answer": "The MVP highlights bookable public-style routes first, but the contact page is set up to capture private group and custom itinerary inquiries."
+  }
+]

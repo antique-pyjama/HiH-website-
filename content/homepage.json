@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "eyebrow": "Vetted halal experiences in Hamburg",
+    "title": "Authentic",
+    "accent": "Heritage",
+    "description": "A refined guide to Hamburg for Muslim travellers, with halal-friendly food tours, heritage walks, and carefully researched city experiences.",
+    "primaryCtaLabel": "View tours",
+    "primaryCtaHref": "/tours",
+    "secondaryCtaLabel": "Our approach",
+    "secondaryCtaHref": "#trust",
+    "image": "/images/hero-hamburg.svg",
+    "imageAlt": "Editorial illustration evoking a warm, premium Hamburg city atmosphere",
+    "asideLabel": "Reliable service",
+    "asideValue": "01"
+  },
+  "intro": {
+    "eyebrow": "Editorial, practical, trustworthy",
+    "title": "An authentic approach to",
+    "highlight": "halal living.",
+    "description": "We combine warm hospitality with real research: halal-vetted food stops, culturally rich walking routes, and a calmer introduction to Hamburg for guests who want clarity before they book.",
+    "image": "/images/intro-editorial.svg",
+    "imageAlt": "Editorial placeholder art for a warm, design-led travel introduction",
+    "stats": [
+      {
+        "label": "Thoroughly vetted",
+        "value": "100%"
+      },
+      {
+        "label": "Direct booking",
+        "value": "Fast"
+      },
+      {
+        "label": "Support style",
+        "value": "Personal"
+      }
+    ]
+  },
+  "positioning": "Each experience is written and presented to answer the questions Muslim visitors actually have: where halal confidence comes from, what the pace feels like, and whether the route suits couples, families, and thoughtful first-time guests.",
+  "trustPoints": [
+    {
+      "number": "01",
+      "title": "Halal-vetted experiences",
+      "description": "Tours are written with transparent halal notes instead of vague labels, so guests know what has been checked and where they may want to ask more."
+    },
+    {
+      "number": "02",
+      "title": "Culture over cliché",
+      "description": "The routes focus on architecture, neighborhoods, waterfront history, and good food rather than nightlife-heavy tourism patterns."
+    },
+    {
+      "number": "03",
+      "title": "Premium but easy to use",
+      "description": "Clear tour cards, thoughtful copy, and direct FareHarbor booking links keep the booking path quick without sacrificing trust."
+    }
+  ],
+  "valueSection": {
+    "description": "The launch experience is designed to feel like a boutique travel concierge: lighter on noise, stronger on signal, and ready for fast founder-led iteration.",
+    "points": [
+      {
+        "kicker": "For Muslim travellers",
+        "title": "Halal suitability is part of the experience design",
+        "description": "Food-focused tours begin from halal confidence, and non-food routes still carry practical notes so guests are not left guessing."
+      },
+      {
+        "kicker": "For families and couples",
+        "title": "Pacing that feels thoughtful, not rushed",
+        "description": "Routes are framed around realistic walking times, welcoming neighborhoods, and experiences that feel calm rather than over-programmed."
+      },
+      {
+        "kicker": "For launch speed",
+        "title": "A site structure ready for growth",
+        "description": "The MVP uses structured JSON content, reusable components, and direct outbound booking links so new tours can be added without a CMS rebuild."
+      }
+    ]
+  },
+  "faqPreviewCount": 4
+}

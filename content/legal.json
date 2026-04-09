@@ -1,0 +1,56 @@
+{
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "This MVP privacy page is structured for launch readiness and should be reviewed with final operational tooling and legal advice before going live.",
+    "sections": [
+      {
+        "heading": "1. Data we collect",
+        "paragraphs": [
+          "When you contact Halal in Hamburg through the website, we may collect the personal information you choose to submit, such as your name, email address, optional phone or WhatsApp details, and message contents.",
+          "Newsletter signups collect your email address only. Tour bookings themselves are handled by FareHarbor and are therefore subject to the provider’s own booking and privacy terms."
+        ]
+      },
+      {
+        "heading": "2. Why we process it",
+        "paragraphs": [
+          "We use submitted information to respond to travel inquiries, support booking-related questions, and improve the clarity of our services.",
+          "If you opt into the newsletter, your email may be used to share launch updates, new tours, and relevant travel information."
+        ]
+      },
+      {
+        "heading": "3. Third-party services",
+        "paragraphs": [
+          "This MVP is prepared for Vercel deployment and links directly to FareHarbor for booking. Additional analytics, email, or newsletter tools may be connected later.",
+          "Before launch, review and update this page to reflect the final providers, hosting, analytics setup, and newsletter tooling actually in use."
+        ]
+      }
+    ]
+  },
+  "termsAndConditions": {
+    "title": "Terms & Conditions",
+    "intro": "These launch-stage terms outline the basic relationship between Halal in Hamburg and guests using the MVP marketing site.",
+    "sections": [
+      {
+        "heading": "1. Website purpose",
+        "paragraphs": [
+          "The website presents information about tours, trust notes, and contact options, and routes guests to external booking pages operated through FareHarbor.",
+          "The site does not process payments directly and does not provide user accounts in this MVP phase."
+        ]
+      },
+      {
+        "heading": "2. Bookings and cancellations",
+        "paragraphs": [
+          "Specific booking availability, payments, cancellation rules, and booking confirmations are governed by the relevant FareHarbor booking page for each tour.",
+          "Guests should review the booking conditions shown at the point of reservation before completing a purchase."
+        ]
+      },
+      {
+        "heading": "3. Tour participation",
+        "paragraphs": [
+          "Guests are responsible for reviewing the tour description, duration, meeting point, and suitability notes before booking.",
+          "If you have special requirements, accessibility questions, or private group needs, please contact Halal in Hamburg before finalizing the booking."
+        ]
+      }
+    ]
+  }
+}

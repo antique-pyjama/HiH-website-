@@ -1,0 +1,49 @@
+{
+  "slug": "ottensen-brunch-discovery",
+  "title": "Ottensen Brunch Discovery",
+  "shortDescription": "A neighborhood-first halal brunch route through one of Hamburg’s most livable districts, designed for slow mornings and design-minded travellers.",
+  "fullDescription": "Ottensen offers a softer, more residential side of Hamburg, making it ideal for guests who want a beautiful neighborhood walk anchored by halal-friendly brunch and thoughtful recommendations. This experience emphasizes atmosphere, independent streets, and the feeling of being guided by someone who understands how Muslim travellers weigh comfort, taste, and ease.",
+  "heroImage": "/images/ottensen-brunch.svg",
+  "heroImageAlt": "Editorial placeholder artwork for a halal brunch discovery tour in Ottensen",
+  "gallery": [
+    "/images/ottensen-brunch.svg",
+    "/images/about-editorial.svg"
+  ],
+  "duration": "2.5 hours",
+  "priceFrom": "€69",
+  "meetingPoint": "Altona Station / Ottensen entrance",
+  "category": [
+    "Food Tour",
+    "Neighbourhood Tour"
+  ],
+  "halalNotes": [
+    "Brunch stops are selected with halal suitability and ingredient transparency in mind.",
+    "This route is especially well-suited to guests who prefer a slower morning pace.",
+    "Contact us ahead of time if you need child-friendly pacing or accessibility support."
+  ],
+  "included": [
+    "Guided neighborhood walk",
+    "Curated halal-friendly brunch tastings",
+    "Local recommendations for the rest of your day in Hamburg"
+  ],
+  "excluded": [
+    "Personal shopping or extra café purchases",
+    "Transport after the tour ends",
+    "Private guide exclusivity unless arranged separately"
+  ],
+  "audience": [
+    "Couples and design-conscious travellers",
+    "Guests looking for a slower morning experience",
+    "Visitors who want neighborhood character more than sightseeing volume"
+  ],
+  "featured": true,
+  "active": true,
+  "bookingProvider": "FareHarbor",
+  "bookingUrl": "https://fareharbor.com/embeds/book/halalinhamburg/items/601002/",
+  "faq": [
+    {
+      "question": "Does this tour work well on arrival day?",
+      "answer": "Yes, it suits guests who want a soft landing into the city and a practical sense of where to spend more time afterward."
+    }
+  ]
+}

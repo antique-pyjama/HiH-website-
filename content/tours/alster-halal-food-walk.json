@@ -1,0 +1,53 @@
+{
+  "slug": "alster-halal-food-walk",
+  "title": "Alster Halal Food Walk",
+  "shortDescription": "A refined waterfront route with halal-vetted tasting stops, polished neighborhood context, and an easy introduction to central Hamburg.",
+  "fullDescription": "This signature starter experience blends the calm atmosphere of the Alster with a curated sequence of halal-friendly stops and city storytelling. Guests move through elegant central districts, pause for food that has been selected for confidence and comfort, and gain a graceful first reading of Hamburg’s everyday texture without being pushed into generic tourist routines.",
+  "heroImage": "/images/alster-walk.svg",
+  "heroImageAlt": "Editorial placeholder artwork for an Alster halal food walk in Hamburg",
+  "gallery": [
+    "/images/alster-walk.svg",
+    "/images/hero-hamburg.svg"
+  ],
+  "duration": "3 hours",
+  "priceFrom": "€79",
+  "meetingPoint": "Jungfernstieg, Inner Alster",
+  "category": [
+    "Food Tour",
+    "Walking Tour"
+  ],
+  "halalNotes": [
+    "Food stops are selected for halal confidence and communicated clearly before the tour.",
+    "Guests can flag additional dietary details in advance through the contact form or booking notes.",
+    "Prayer-time pacing can be discussed before the experience where timing allows."
+  ],
+  "included": [
+    "Guided walk with historical and neighborhood commentary",
+    "Curated halal-friendly tasting stops",
+    "Pre-tour suitability notes and practical guidance"
+  ],
+  "excluded": [
+    "Transport to the meeting point",
+    "Additional purchases outside the included tastings",
+    "Private transport or hotel pickup"
+  ],
+  "audience": [
+    "First-time visitors to Hamburg",
+    "Couples and small groups seeking a calm premium route",
+    "Travellers who want food discovery with cultural context"
+  ],
+  "featured": true,
+  "active": true,
+  "bookingProvider": "FareHarbor",
+  "bookingUrl": "https://fareharbor.com/embeds/book/halalinhamburg/items/601001/",
+  "faq": [
+    {
+      "question": "Is this a full meal or a tasting route?",
+      "answer": "This route is framed as a curated tasting-led city experience rather than a single seated meal."
+    },
+    {
+      "question": "Can children join?",
+      "answer": "Yes, especially for families comfortable with a relaxed city walk and several stops along the route."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "slug": "speicherstadt-heritage-walk",
+  "title": "Speicherstadt Heritage Walk",
+  "shortDescription": "A story-rich route through Hamburg’s warehouse district and harbor edge, with practical Muslim-friendly notes built into the experience.",
+  "fullDescription": "For guests who want history first, this walk explores the city’s mercantile past through the red-brick drama of Speicherstadt and its surrounding quarters. The experience is designed to feel informed and atmospheric rather than theatrical, with a strong emphasis on context, route readability, and practical notes that make the city easier to navigate with confidence.",
+  "heroImage": "/images/speicherstadt.svg",
+  "heroImageAlt": "Editorial placeholder artwork for a heritage walk in Hamburg's Speicherstadt",
+  "gallery": [
+    "/images/speicherstadt.svg",
+    "/images/hero-hamburg.svg"
+  ],
+  "duration": "2 hours",
+  "priceFrom": "€59",
+  "meetingPoint": "Speicherstadt coffee plaza",
+  "category": [
+    "Heritage Walk",
+    "City Highlights"
+  ],
+  "halalNotes": [
+    "This tour is not food-led, but includes practical notes on nearby halal-friendly options and break planning.",
+    "The route is suitable for travellers who prefer culture and architecture over nightlife activity.",
+    "Prayer and comfort-stop questions can be discussed before the tour date."
+  ],
+  "included": [
+    "Guided heritage walk",
+    "Historical commentary and route storytelling",
+    "Practical Muslim-friendly neighborhood notes"
+  ],
+  "excluded": [
+    "Meals or tasting stops",
+    "Museum tickets unless added later",
+    "Private transfer services"
+  ],
+  "audience": [
+    "History-focused travellers",
+    "Guests looking for a shorter first-day orientation",
+    "Visitors who want a culturally rich route without nightlife emphasis"
+  ],
+  "featured": true,
+  "active": true,
+  "bookingProvider": "FareHarbor",
+  "bookingUrl": "https://fareharbor.com/embeds/book/halalinhamburg/items/601003/",
+  "faq": [
+    {
+      "question": "Is this mostly walking?",
+      "answer": "Yes. The experience is primarily a walking route with regular pauses for context, photos, and orientation."
+    },
+    {
+      "question": "Is food included on this tour?",
+      "answer": "No, this is a heritage-focused route. Nearby halal-friendly recommendations can still be shared."
+    }
+  ]
+}
