@@ -52,5 +52,7 @@ Useful commands:
 ```bash
 npm run preview
 npm run deploy
+npm run cf:build
+npm run cf:deploy
 npm run cf-typegen
 ```
