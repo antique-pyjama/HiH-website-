@@ -1,5 +1,6 @@
 import { ContentSection } from "@/components/ContentSection";
 import { buildMetadata } from "@/lib/metadata";
+import { siteSettings } from "@/lib/content";
 
 export const metadata = buildMetadata({
   title: "Impressum",
@@ -23,7 +24,7 @@ export default function ImpressumPage() {
           <br />
           Hamburg, Germany
           <br />
-          Email: hello@halalinhamburg.com
+          Email: {siteSettings.contactEmail}
         </p>
         <p className="mt-6">
           Official provider information, VAT details, and responsible person details must be

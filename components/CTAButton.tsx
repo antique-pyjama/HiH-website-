@@ -17,10 +17,11 @@ type CTAButtonProps = {
 
 const variantStyles = {
   primary:
-    "bg-[linear-gradient(135deg,var(--primary),var(--primary-strong))] text-white shadow-soft hover:brightness-105",
-  secondary: "ghost-outline bg-transparent text-secondary hover:bg-white/70",
+    "bg-[linear-gradient(135deg,var(--primary),var(--primary-strong))] text-white shadow-soft hover:-translate-y-0.5 hover:brightness-105",
+  secondary:
+    "ghost-outline bg-white/70 text-primary hover:-translate-y-0.5 hover:bg-white",
   tertiary:
-    "bg-transparent px-0 text-tertiary underline decoration-transparent underline-offset-4 hover:decoration-current",
+    "bg-transparent px-0 text-secondary underline decoration-[rgba(143,76,46,0.16)] underline-offset-6 hover:decoration-current",
 } as const;
 
 export function CTAButton({
@@ -34,8 +35,8 @@ export function CTAButton({
 }: CTAButtonProps) {
   const baseStyles =
     variant === "tertiary"
-      ? "inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] transition"
-      : "inline-flex min-h-12 items-center rounded-xl px-5 py-3 text-sm font-semibold uppercase tracking-[0.2em] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary";
+      ? "inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] transition duration-200"
+      : "inline-flex min-h-12 items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold uppercase tracking-[0.2em] transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary";
 
   const classes = cn(baseStyles, variantStyles[variant], className);
   const isExternal = external ?? (href.startsWith("http") || href.startsWith("mailto:"));

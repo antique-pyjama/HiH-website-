@@ -1,6 +1,6 @@
 # Halal in Hamburg
 
-Launch-ready MVP website for `halalinhamburg.com`.
+Launch-ready MVP website for `halalhamburg.com`.
 
 ## Stack
 
@@ -39,9 +39,23 @@ Open `http://localhost:3000`.
 
 ## Notes
 
-- Booking is routed through FareHarbor links.
+- The site includes a dedicated booking request flow with real request persistence.
+- Online payments and automatic email confirmations are still placeholder integrations.
 - Contact and newsletter forms use placeholder server actions and should be connected before launch.
 - Replace placeholder artwork and legal details before going live.
+
+## Booking persistence
+
+- In local development, booking requests are saved to `.data/booking-requests.json`.
+- For Cloudflare production, connect a D1 database binding named `BOOKINGS_DB`.
+- A migration file is included in `migrations/0001_create_booking_requests.sql`.
+
+Example Cloudflare setup:
+
+```bash
+npx wrangler d1 create halalhamburg-bookings
+npx wrangler d1 migrations apply BOOKINGS_DB --remote
+```
 
 ## Cloudflare deployment
 

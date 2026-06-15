@@ -7,7 +7,7 @@ import { homepageContent, siteSettings } from "@/lib/content";
 export const metadata = buildMetadata({
   title: "Contact Halal in Hamburg",
   description:
-    "Send an inquiry, request a private group tour, or ask practical questions before booking your halal-friendly Hamburg experience.",
+    "Send an inquiry, request a private group walking tour, or ask practical Muslim-friendly travel questions before booking.",
   pathname: "/contact",
 });
 
@@ -17,7 +17,7 @@ export default function ContactPage() {
       <ContentSection
         eyebrow="Contact"
         title="Planning a visit, private group, or custom request?"
-        description="Use the form below for quick questions, concierge-style guidance, and early booking support. The current MVP uses direct outreach plus FareHarbor booking links."
+        description="Planning to visit Hamburg? Whether as a family, group, individual, or custom request, we welcome you to use the form for questions, early booking support, and general inquiries."
         headingLevel="h1"
       >
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
@@ -33,6 +33,12 @@ export default function ContactPage() {
                   <strong className="text-white">Email:</strong> {siteSettings.contactEmail}
                 </p>
                 <p>
+                  <strong className="text-white">Phone:</strong> {siteSettings.contactPhone}
+                </p>
+                <p>
+                  <strong className="text-white">WhatsApp:</strong> {siteSettings.contactWhatsApp}
+                </p>
+                <p>
                   <strong className="text-white">Base:</strong> {siteSettings.contactLocation}
                 </p>
                 <p>
@@ -45,8 +51,8 @@ export default function ContactPage() {
               <p className="eyebrow text-secondary">What to include</p>
               <ul className="mt-5 space-y-4 text-base leading-7 text-foreground-muted">
                 <li>Your travel dates and group size</li>
-                <li>Whether you are booking as a couple, family, or private group</li>
-                <li>Any accessibility, prayer-time, or dietary details we should know</li>
+                <li>Whether you are booking as a family, group, individual, or private request</li>
+                <li>Any accessibility, prayer-break, or halal food preference details we should know</li>
               </ul>
             </div>
           </aside>

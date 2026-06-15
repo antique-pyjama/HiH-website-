@@ -22,13 +22,13 @@ export function MobileNav({ navItems, bookHref }: MobileNavProps) {
         aria-expanded={open}
         aria-label="Toggle navigation"
         onClick={() => setOpen((value) => !value)}
-        className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-surface-low text-primary"
+        className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/80 text-primary shadow-[0_8px_20px_rgba(28,28,26,0.08)]"
       >
         <span className="text-2xl">{open ? "×" : "☰"}</span>
       </button>
 
       {open ? (
-        <div className="absolute left-4 right-4 top-[calc(100%+0.75rem)] rounded-[1.6rem] bg-panel p-5 shadow-soft">
+        <div className="absolute left-4 right-4 top-[calc(100%+0.75rem)] rounded-[1.6rem] border border-white/50 bg-panel p-5 shadow-soft">
           <nav className="flex flex-col gap-3">
             {navItems.map((item) => (
               <Link
@@ -45,11 +45,10 @@ export function MobileNav({ navItems, bookHref }: MobileNavProps) {
             <CTAButton
               href={bookHref}
               variant="primary"
-              external
               className="w-full justify-center"
               eventName="mobile_menu_booking_click"
             >
-              Book now
+              Book a tour
             </CTAButton>
           </div>
         </div>

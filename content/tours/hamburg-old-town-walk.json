@@ -1,0 +1,60 @@
+{
+  "slug": "muslim-friendly-hamburg-old-town-walking-tour",
+  "title": "Muslim-Friendly Hamburg Old Town Walking Tour",
+  "shortDescription": "A welcoming introduction to Hamburg’s historic core with city storytelling, prayer-break awareness, and comfortable pacing for first-time visitors.",
+  "fullDescription": "This route is designed for guests who want the city’s foundations first: canals, merchant streets, historic churches from the outside, and the rhythms of the old town. The experience balances local storytelling with practical comfort, making it ideal for Muslim travellers who want a respectful, family-friendly city walk with time to absorb the atmosphere.",
+  "heroImage": "/images/hero-hamburg.svg",
+  "heroImageAlt": "Illustration for a Muslim-friendly Hamburg Old Town walking tour",
+  "gallery": [
+    "/images/hero-hamburg.svg",
+    "/images/intro-editorial.svg"
+  ],
+  "duration": "2 hours",
+  "priceFrom": "€39 per person",
+  "basePrice": 39,
+  "pricingMode": "per_person",
+  "meetingPoint": "Rathausmarkt, Hamburg City Hall entrance",
+  "meetingNeighborhood": "Altstadt",
+  "category": ["Walking Tour", "Historic District"],
+  "muslimFriendlyFeatures": [
+    "Prayer-break awareness built into route planning",
+    "Family-friendly pacing with regular pause points",
+    "Alcohol-free recommendation list for the surrounding area",
+    "Nearby halal food suggestions shared after the tour"
+  ],
+  "included": [
+    "Licensed-style guided walking experience",
+    "Historic city orientation and local context",
+    "Muslim-friendly planning notes after booking"
+  ],
+  "excluded": [
+    "Food and drinks",
+    "Public transport tickets",
+    "Entry tickets to paid attractions"
+  ],
+  "audience": [
+    "First-time Hamburg visitors",
+    "Families and small groups",
+    "Guests wanting a respectful cultural overview"
+  ],
+  "routeHighlights": [
+    "Rathaus and civic history",
+    "Canal-side merchant streets",
+    "Historic orientation points for the rest of your stay"
+  ],
+  "languages": ["English", "German", "Arabic upon request"],
+  "maxGroupSize": "10 guests",
+  "maxGuests": 10,
+  "timeSlots": ["10:00", "13:30", "16:00"],
+  "availabilityNote": "Best for first or second day in Hamburg.",
+  "featured": true,
+  "active": true,
+  "bookingProvider": "Internal booking placeholder",
+  "bookingUrl": "/booking?tour=muslim-friendly-hamburg-old-town-walking-tour",
+  "faq": [
+    {
+      "question": "Is this route suitable for children?",
+      "answer": "Yes, especially for families comfortable with a calm two-hour city walk and a few short standing stops."
+    }
+  ]
+}

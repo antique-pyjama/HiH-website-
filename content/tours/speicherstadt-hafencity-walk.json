@@ -1,0 +1,60 @@
+{
+  "slug": "speicherstadt-hafencity-halal-friendly-walking-tour",
+  "title": "Speicherstadt & HafenCity Halal-Friendly Walking Tour",
+  "shortDescription": "A polished walk through red-brick warehouse heritage and modern waterfront architecture with practical Muslim-friendly guidance.",
+  "fullDescription": "This tour moves between Hamburg’s iconic warehouse district and the contemporary lines of HafenCity, combining urban history with striking visual contrast. It suits travellers who want architecture, trade history, and photo-friendly city views while still benefiting from route planning that respects prayer timing, comfort, and family-friendly pacing.",
+  "heroImage": "/images/speicherstadt.svg",
+  "heroImageAlt": "Illustration for a Speicherstadt and HafenCity Muslim-friendly walking tour",
+  "gallery": [
+    "/images/speicherstadt.svg",
+    "/images/about-editorial.svg"
+  ],
+  "duration": "2.5 hours",
+  "priceFrom": "€45 per person",
+  "basePrice": 45,
+  "pricingMode": "per_person",
+  "meetingPoint": "Speicherstadt coffee plaza",
+  "meetingNeighborhood": "Speicherstadt",
+  "category": ["Walking Tour", "Architecture", "Waterfront"],
+  "muslimFriendlyFeatures": [
+    "Prayer-break timing can be noted during booking",
+    "Halal-conscious cafe and snack suggestions nearby",
+    "Alcohol-free recommendation list after the tour",
+    "Comfortable pacing for families and mature travellers"
+  ],
+  "included": [
+    "Guided waterfront walking tour",
+    "Historical and architectural commentary",
+    "Follow-up Muslim-friendly recommendation sheet"
+  ],
+  "excluded": [
+    "Museum entries",
+    "Meals or snacks",
+    "Hotel transfers"
+  ],
+  "audience": [
+    "Architecture lovers",
+    "Couples and small groups",
+    "Travellers wanting a scenic, modern-classic Hamburg route"
+  ],
+  "routeHighlights": [
+    "Speicherstadt canals and brick landmarks",
+    "HafenCity viewpoints",
+    "Elbphilharmonie exterior approach"
+  ],
+  "languages": ["English", "German"],
+  "maxGroupSize": "12 guests",
+  "maxGuests": 12,
+  "timeSlots": ["09:30", "14:00", "17:00"],
+  "availabilityNote": "Excellent in the late afternoon for warmer light.",
+  "featured": true,
+  "active": true,
+  "bookingProvider": "Internal booking placeholder",
+  "bookingUrl": "/booking?tour=speicherstadt-hafencity-halal-friendly-walking-tour",
+  "faq": [
+    {
+      "question": "Do we go inside the Elbphilharmonie?",
+      "answer": "This version focuses on the surrounding route and exterior context. Entry can be discussed separately for custom private bookings."
+    }
+  ]
+}

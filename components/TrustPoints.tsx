@@ -12,8 +12,11 @@ export function TrustPoints({ points }: TrustPointsProps) {
   return (
     <div className="grid gap-6 lg:grid-cols-3">
       {points.map((point) => (
-        <article key={point.title} className="rounded-[2rem] bg-panel px-7 py-8 shadow-soft">
-          <p className="font-heading text-4xl font-extrabold tracking-tight text-primary">
+        <article
+          key={point.title}
+          className="rounded-[2rem] border border-white/60 bg-panel px-7 py-8 shadow-soft"
+        >
+          <p className="font-heading text-4xl font-extrabold tracking-tight text-secondary">
             {point.number}
           </p>
           <h3 className="mt-5 text-2xl font-bold tracking-tight text-primary">{point.title}</h3>

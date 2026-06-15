@@ -19,6 +19,7 @@
 /halal-in-hamburg-site/
 .open-next/
 .wrangler/
+.data/
 
 # production
 /build

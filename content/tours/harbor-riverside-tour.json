@@ -1,0 +1,60 @@
+{
+  "slug": "hamburg-harbor-elbe-riverside-muslim-friendly-tour",
+  "title": "Hamburg Harbor & Elbe Riverside Muslim-Friendly Tour",
+  "shortDescription": "A breezy riverside route with harbor stories, broad city views, and practical planning for halal-conscious guests.",
+  "fullDescription": "This route highlights Hamburg’s relationship with the Elbe: harbor movement, promenades, and waterside city life. It is ideal for visitors who want an open-air, visually rich walk that feels easy to follow and leaves space for photos, conversation, and flexible group needs.",
+  "heroImage": "/images/alster-walk.svg",
+  "heroImageAlt": "Illustration for a Muslim-friendly Hamburg harbor and Elbe riverside tour",
+  "gallery": [
+    "/images/alster-walk.svg",
+    "/images/hero-hamburg.svg"
+  ],
+  "duration": "2 hours",
+  "priceFrom": "€42 per person",
+  "basePrice": 42,
+  "pricingMode": "per_person",
+  "meetingPoint": "Landungsbrücken Station main exit",
+  "meetingNeighborhood": "Harborfront",
+  "category": ["Walking Tour", "Waterfront", "Scenic Route"],
+  "muslimFriendlyFeatures": [
+    "Open route with flexible pause opportunities",
+    "Family-friendly pacing and photo stops",
+    "Nearby halal-conscious lunch ideas available on request",
+    "Prayer-break awareness noted during booking"
+  ],
+  "included": [
+    "Guided harborfront walk",
+    "Orientation for the wider harbor area",
+    "Suggested halal-friendly follow-up stops"
+  ],
+  "excluded": [
+    "Boat tickets",
+    "Meals and refreshments",
+    "Private transport"
+  ],
+  "audience": [
+    "Scenic-route lovers",
+    "Families and mixed-age groups",
+    "Guests wanting a gentler outdoor city experience"
+  ],
+  "routeHighlights": [
+    "Landungsbrücken",
+    "Harbor outlooks",
+    "Elbe promenade sections"
+  ],
+  "languages": ["English", "German"],
+  "maxGroupSize": "10 guests",
+  "maxGuests": 10,
+  "timeSlots": ["10:30", "15:00", "18:00"],
+  "availabilityNote": "Strong choice for clear-weather days and family groups.",
+  "featured": false,
+  "active": true,
+  "bookingProvider": "Internal booking placeholder",
+  "bookingUrl": "/booking?tour=hamburg-harbor-elbe-riverside-muslim-friendly-tour",
+  "faq": [
+    {
+      "question": "Is this mainly flat walking?",
+      "answer": "Yes, the route is relatively straightforward and suits guests who want a comfortable, scenic walk."
+    }
+  ]
+}

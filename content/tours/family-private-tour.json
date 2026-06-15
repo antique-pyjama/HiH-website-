@@ -1,0 +1,60 @@
+{
+  "slug": "family-friendly-private-muslim-walking-tour",
+  "title": "Family-Friendly Private Muslim Walking Tour",
+  "shortDescription": "A private route for families who want flexibility, child-friendly pacing, and a calm introduction to Hamburg.",
+  "fullDescription": "Designed for parents, children, and multi-generation groups, this private tour creates space for rest breaks, flexible storytelling, and practical planning around prayer and meal timing. It is a strong option for families who want guidance without the pressure of keeping up with a larger public group.",
+  "heroImage": "/images/about-editorial.svg",
+  "heroImageAlt": "Illustration for a family-friendly private Muslim walking tour in Hamburg",
+  "gallery": [
+    "/images/about-editorial.svg",
+    "/images/hero-hamburg.svg"
+  ],
+  "duration": "2.5 hours",
+  "priceFrom": "€220 private group",
+  "basePrice": 220,
+  "pricingMode": "private_group",
+  "meetingPoint": "Flexible central meeting point",
+  "meetingNeighborhood": "Flexible",
+  "category": ["Private Tour", "Family-Friendly", "Walking Tour"],
+  "muslimFriendlyFeatures": [
+    "Private pacing for children or older relatives",
+    "Prayer-break awareness and flexible stopping points",
+    "Halal-conscious lunch and snack suggestions",
+    "Route adjusted to your family’s comfort level"
+  ],
+  "included": [
+    "Private guide-style walking experience",
+    "Flexible route planning",
+    "Follow-up notes tailored to your family"
+  ],
+  "excluded": [
+    "Attraction tickets",
+    "Meals and drinks",
+    "Transport or taxis"
+  ],
+  "audience": [
+    "Families with children",
+    "Mixed-age private groups",
+    "Travellers needing extra flexibility"
+  ],
+  "routeHighlights": [
+    "Flexible route based on family comfort",
+    "Gentler city orientation",
+    "Local tips for the rest of your visit"
+  ],
+  "languages": ["English", "German", "Arabic upon request"],
+  "maxGroupSize": "Up to 6 guests",
+  "maxGuests": 6,
+  "timeSlots": ["09:30", "13:00", "16:30"],
+  "availabilityNote": "Best booked as a private group experience.",
+  "featured": false,
+  "active": true,
+  "bookingProvider": "Internal booking placeholder",
+  "bookingUrl": "/booking?tour=family-friendly-private-muslim-walking-tour",
+  "faq": [
+    {
+      "question": "Can the route be adjusted for strollers or slower pacing?",
+      "answer": "Yes, that is exactly what this private option is designed to support."
+    }
+  ]
+}

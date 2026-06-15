@@ -1,0 +1,60 @@
+{
+  "slug": "halal-food-culture-walking-tour-hamburg",
+  "title": "Halal Food & Culture Walking Tour in Hamburg",
+  "shortDescription": "A food-conscious city walk combining neighborhood stories, halal-friendly recommendations, and the cultural side of everyday Hamburg.",
+  "fullDescription": "This tour is for travellers who want local flavor without the guesswork. The route mixes urban context, cultural interpretation, and carefully framed halal-conscious recommendations. It is especially good for guests who want to orient themselves around Muslim-friendly food options while still enjoying a proper walking tour.",
+  "heroImage": "/images/ottensen-brunch.svg",
+  "heroImageAlt": "Illustration for a halal food and culture walking tour in Hamburg",
+  "gallery": [
+    "/images/ottensen-brunch.svg",
+    "/images/intro-editorial.svg"
+  ],
+  "duration": "3 hours",
+  "priceFrom": "€59 per person",
+  "basePrice": 59,
+  "pricingMode": "per_person",
+  "meetingPoint": "Hamburg Central Station south exit",
+  "meetingNeighborhood": "City Center",
+  "category": ["Food Tour", "Walking Tour", "Culture"],
+  "muslimFriendlyFeatures": [
+    "Halal food recommendation focus",
+    "Awareness of prayer timing and nearby suitable stops",
+    "Alcohol-free recommendation list",
+    "Comfortable pacing for guests travelling with children"
+  ],
+  "included": [
+    "Guided route with culture-focused commentary",
+    "Halal-conscious recommendation list",
+    "Post-tour neighborhood tips"
+  ],
+  "excluded": [
+    "Meals and tastings unless later added",
+    "Personal food purchases",
+    "Transport costs"
+  ],
+  "audience": [
+    "Halal-conscious travellers",
+    "Food-curious visitors",
+    "Guests wanting a practical first-day orientation"
+  ],
+  "routeHighlights": [
+    "Local neighborhood context",
+    "Halal-conscious food planning tips",
+    "Cultural storytelling beyond standard tourism"
+  ],
+  "languages": ["English", "German", "Arabic upon request"],
+  "maxGroupSize": "8 guests",
+  "maxGuests": 8,
+  "timeSlots": ["11:00", "14:30", "17:30"],
+  "availabilityNote": "Recommended for guests staying at least two days in Hamburg.",
+  "featured": true,
+  "active": true,
+  "bookingProvider": "Internal booking placeholder",
+  "bookingUrl": "/booking?tour=halal-food-culture-walking-tour-hamburg",
+  "faq": [
+    {
+      "question": "Are meals included in this version?",
+      "answer": "Not yet. The current MVP includes the route and recommendation experience, with placeholder space to add tastings later."
+    }
+  ]
+}

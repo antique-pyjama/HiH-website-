@@ -1,10 +1,12 @@
 {
   "siteName": "Halal in Hamburg",
-  "domain": "https://halalinhamburg.com",
-  "description": "Premium halal-friendly food tours, walking tours, and culturally rich city experiences for Muslim travellers in Hamburg.",
-  "tagline": "A calm, trustworthy guide to Hamburg for Muslim travellers.",
-  "primaryBookingUrl": "https://fareharbor.com/embeds/book/halalinhamburg/items/",
-  "contactEmail": "hello@halalinhamburg.com",
+  "domain": "https://halalhamburg.com",
+  "description": "Muslim-friendly guided walking tours in Hamburg with halal-conscious recommendations, prayer-break awareness, and warm local insight.",
+  "tagline": "Hamburg walking tours designed for Muslim travellers, families, and halal-conscious visitors.",
+  "primaryBookingUrl": "/booking",
+  "contactEmail": "hello@halalhamburg.com",
+  "contactPhone": "+49 40 0000 0000",
+  "contactWhatsApp": "+49 151 0000 0000",
   "contactLocation": "Hamburg, Germany",
-  "newsletterBlurb": "A quiet monthly note with new halal-vetted spots, fresh routes, and practical updates for visiting Hamburg with confidence."
+  "newsletterBlurb": "Receive new walking tour dates, seasonal halal food suggestions, and practical Muslim-friendly travel tips for visiting Hamburg with confidence."
 }

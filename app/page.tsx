@@ -10,21 +10,23 @@ import { buildMetadata } from "@/lib/metadata";
 import { featuredTours, homepageContent, siteSettings } from "@/lib/content";
 
 export const metadata = buildMetadata({
-  title: "Halal-friendly Hamburg tours for Muslim travellers",
+  title: "Muslim-friendly walking tours in Hamburg",
   description:
-    "Discover premium halal-vetted food tours, walking tours, and Muslim-friendly city experiences in Hamburg.",
+    "Book warm, respectful guided walking tours in Hamburg with halal-conscious recommendations, family-friendly pacing, and prayer-break awareness.",
   pathname: "/",
 });
 
 export default function Home() {
   const faqPreview = homepageContent.faqPreviewCount;
+
   const organisationSchema = {
     "@context": "https://schema.org",
-    "@type": "TravelAgency",
+    "@type": "TouristInformationCenter",
     name: siteSettings.siteName,
     url: siteSettings.domain,
     description: siteSettings.description,
     email: siteSettings.contactEmail,
+    telephone: siteSettings.contactPhone,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Hamburg",
@@ -69,17 +71,23 @@ export default function Home() {
           href: homepageContent.hero.secondaryCtaHref,
           label: homepageContent.hero.secondaryCtaLabel,
         }}
+        tertiaryCta={{
+          href: homepageContent.hero.tertiaryCtaHref,
+          label: homepageContent.hero.tertiaryCtaLabel,
+        }}
         imageSrc={homepageContent.hero.image}
         imageAlt={homepageContent.hero.imageAlt}
         asideLabel={homepageContent.hero.asideLabel}
         asideValue={homepageContent.hero.asideValue}
+        highlights={homepageContent.hero.highlights}
+        metrics={homepageContent.hero.metrics}
       />
 
       <ContentSection tone="muted" className="overflow-hidden">
-        <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <div className="relative mx-auto w-full max-w-[480px] lg:mx-0">
-            {/* TODO: Replace editorial placeholder artwork with founder-approved Hamburg photography. */}
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-panel">
+        <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+          <div className="relative mx-auto w-full max-w-[500px] lg:mx-0">
+            {/* TODO: Replace editorial placeholder artwork with verified founder photography of Hamburg routes. */}
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-panel shadow-soft">
               <Image
                 src={homepageContent.intro.image}
                 alt={homepageContent.intro.imageAlt}
@@ -88,11 +96,12 @@ export default function Home() {
                 sizes="(min-width: 1024px) 40vw, 100vw"
               />
             </div>
-            <div className="absolute -bottom-5 right-5 flex h-20 w-20 items-center justify-center rounded-[1.5rem] bg-primary text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-soft">
-              Vet
+            <div className="absolute -bottom-6 left-6 rounded-[1.7rem] bg-primary px-5 py-4 text-sm font-semibold uppercase tracking-[0.24em] text-white shadow-soft">
+              Family-aware pacing
             </div>
           </div>
-          <div className="max-w-2xl lg:pl-12">
+
+          <div className="max-w-2xl lg:pl-10">
             <p className="eyebrow mb-5 text-secondary">{homepageContent.intro.eyebrow}</p>
             <h2 className="max-w-xl text-4xl font-extrabold tracking-tight text-primary sm:text-5xl">
               {homepageContent.intro.title}{" "}
@@ -103,11 +112,14 @@ export default function Home() {
             </p>
             <div className="mt-10 grid gap-6 sm:grid-cols-3">
               {homepageContent.intro.stats.map((stat) => (
-                <div key={stat.label} className="space-y-2 rounded-[1.5rem] bg-panel px-6 py-5">
+                <div
+                  key={stat.label}
+                  className="rounded-[1.6rem] border border-white/60 bg-white/80 px-6 py-5 shadow-soft"
+                >
                   <p className="font-heading text-3xl font-extrabold tracking-tight text-primary">
                     {stat.value}
                   </p>
-                  <p className="text-sm uppercase tracking-[0.22em] text-foreground-soft">
+                  <p className="mt-2 text-sm uppercase tracking-[0.2em] text-foreground-soft">
                     {stat.label}
                   </p>
                 </div>
@@ -118,23 +130,58 @@ export default function Home() {
       </ContentSection>
 
       <ContentSection
-        id="trust"
         eyebrow="Why travellers trust us"
-        title="Muslim-friendly city experiences, checked with care"
+        title="Walking tours designed for comfort, clarity, and local insight"
         description={homepageContent.positioning}
       >
         <TrustPoints points={homepageContent.trustPoints} />
       </ContentSection>
 
       <ContentSection
+        tone="sand"
+        eyebrow="How booking works"
+        title="A simple path from curiosity to confirmed tour request"
+      >
+        <div className="grid gap-6 lg:grid-cols-3">
+          {[
+            {
+              step: "01",
+              title: "Compare routes",
+              description:
+                "Browse Muslim-friendly Hamburg tours with clear notes on pacing, meeting points, languages, and what is included.",
+            },
+            {
+              step: "02",
+              title: "Choose a time slot",
+              description:
+                "Pick your preferred date, time, number of guests, and any family or Muslim-friendly preferences that matter for your group.",
+            },
+            {
+              step: "03",
+              title: "Review and confirm",
+              description:
+                "See a full booking summary before sending your request. Your booking is saved immediately, while payment and confirmation email integrations are prepared for the next launch step.",
+            },
+          ].map((item) => (
+            <article key={item.step} className="tonal-card rounded-[2rem] px-7 py-8">
+              <p className="font-heading text-4xl font-extrabold tracking-tight text-secondary">
+                {item.step}
+              </p>
+              <h3 className="mt-5 text-2xl font-bold tracking-tight text-primary">{item.title}</h3>
+              <p className="mt-4 text-base leading-7 text-foreground-muted">{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </ContentSection>
+
+      <ContentSection
         id="featured-tours"
-        tone="default"
         eyebrow="Featured tours"
-        title="Verified routes through the Hamburg you actually came to experience"
-        description="The MVP begins with three flagship experiences designed to move guests from curiosity to booking in a few clear steps."
+        title="Choose a route that fits your pace, interests, and travel style"
+        description="From old town orientation to halal-conscious food planning and private family options, each route is built to make city discovery feel more comfortable."
         action={
           <CTAButton href="/tours" variant="tertiary" eventName="view_all_tours_click">
-            Browse all tours
+            View all walking tours
           </CTAButton>
         }
       >
@@ -142,9 +189,9 @@ export default function Home() {
       </ContentSection>
 
       <ContentSection
-        tone="sand"
-        eyebrow="Why book with us"
-        title="A calmer alternative to nightlife-first city tourism"
+        tone="muted"
+        eyebrow="What makes it different"
+        title="Muslim-friendly details are part of the planning, not an afterthought"
         description={homepageContent.valueSection.description}
       >
         <div className="grid gap-6 lg:grid-cols-3">
@@ -160,11 +207,43 @@ export default function Home() {
         </div>
       </ContentSection>
 
+      <ContentSection tone="forest">
+        <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-center">
+          <div>
+            <p className="eyebrow text-white/70">{homepageContent.testimonial.attribution}</p>
+            <h2 className="mt-4 max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+              {homepageContent.testimonial.title}
+            </h2>
+            <blockquote className="mt-6 max-w-3xl text-xl leading-9 text-white/82">
+              “{homepageContent.testimonial.quote}”
+            </blockquote>
+          </div>
+          <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
+            <p className="eyebrow text-secondary">Ready to plan?</p>
+            <h3 className="mt-4 text-3xl font-bold tracking-tight text-primary">
+              Book directly or ask first
+            </h3>
+            <p className="mt-4 text-base leading-7 text-foreground-muted">
+              Start with the booking page if you already know your route, or use contact if you
+              want help choosing between public, private, or family-friendly options.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-4">
+              <CTAButton href="/booking" variant="primary">
+                Book a Muslim-Friendly Tour
+              </CTAButton>
+              <CTAButton href="/contact" variant="secondary">
+                Ask a question first
+              </CTAButton>
+            </div>
+          </div>
+        </div>
+      </ContentSection>
+
       <ContentSection
         id="faq-preview"
         eyebrow="Questions, answered"
-        title="Everything guests usually ask before they reserve"
-        description="Keep the decision simple: what halal means on tour, who the tours are for, and how booking works."
+        title="Everything most guests want to know before booking"
+        description="Clear expectations help travellers feel comfortable before they commit to a route, especially when preferences around food, prayer, or family pacing matter."
         action={
           <CTAButton href="/information" variant="secondary">
             View full information
@@ -174,30 +253,29 @@ export default function Home() {
         <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <FAQAccordion items={homepageContent.faqPreview.slice(0, faqPreview)} />
           <div className="rounded-[2rem] bg-primary px-8 py-10 text-white shadow-soft">
-            <p className="eyebrow text-white/70">Need a quick answer?</p>
+            <p className="eyebrow text-white/70">Need a tailored answer?</p>
             <h3 className="mt-4 text-3xl font-bold tracking-tight">
-              Share your travel dates and we will guide you to the right experience.
+              Tell us your dates, group style, and preferences before you reserve.
             </h3>
             <p className="mt-5 max-w-md text-base leading-7 text-white/78">
-              Ideal for first-time visitors, families, and travellers who want reliable halal
-              food guidance without wasting time cross-checking every stop.
+              We can help with private tours, family pacing, prayer-break awareness, halal-conscious
+              planning, and general route fit before you confirm.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <CTAButton
-                href="/contact"
+                href="/booking"
                 variant="secondary"
                 className="border-white/25 text-white hover:bg-white/10"
               >
-                Contact us
+                Choose a time slot
               </CTAButton>
               <CTAButton
-                href={siteSettings.primaryBookingUrl}
+                href="/contact"
                 variant="primary"
                 className="bg-white text-primary hover:bg-white/90"
-                external
-                eventName="homepage_primary_booking_click"
+                eventName="homepage_contact_click"
               >
-                Book with FareHarbor
+                Contact the team
               </CTAButton>
             </div>
           </div>
@@ -209,8 +287,7 @@ export default function Home() {
           <div className="max-w-xl">
             <p className="eyebrow text-white/65">Stay informed</p>
             <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              Receive new tours, seasonal food finds, and practical Muslim travel notes for
-              Hamburg.
+              Receive tour updates, Muslim-friendly city notes, and seasonal halal recommendations.
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/74">
               {siteSettings.newsletterBlurb}

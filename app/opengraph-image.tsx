@@ -90,7 +90,7 @@ export default function OpengraphImage() {
                 fontWeight: 700,
               }}
             >
-              halalinhamburg.com
+              halalhamburg.com
             </div>
           </div>
         </div>

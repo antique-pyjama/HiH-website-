@@ -15,9 +15,11 @@ export const metadata: Metadata = {
   keywords: [
     "Hamburg halal tours",
     "Muslim-friendly Hamburg",
+    "Muslim-friendly walking tours Hamburg",
     "halal food tour Hamburg",
     "Hamburg walking tours",
-    "FareHarbor",
+    "family-friendly Hamburg tours",
+    "private Hamburg tour",
   ],
   authors: [{ name: siteSettings.siteName }],
   creator: siteSettings.siteName,

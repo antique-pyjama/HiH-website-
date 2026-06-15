@@ -7,7 +7,7 @@
         "heading": "1. Data we collect",
         "paragraphs": [
           "When you contact Halal in Hamburg through the website, we may collect the personal information you choose to submit, such as your name, email address, optional phone or WhatsApp details, and message contents.",
-          "Newsletter signups collect your email address only. Tour bookings themselves are handled by FareHarbor and are therefore subject to the provider’s own booking and privacy terms."
+          "Newsletter signups collect your email address only. Booking requests may also collect preferred tour, date, time slot, guest count, payment choice, and optional travel preferences so we can respond appropriately."
         ]
       },
       {
@@ -20,8 +20,8 @@
       {
         "heading": "3. Third-party services",
         "paragraphs": [
-          "This MVP is prepared for Vercel deployment and links directly to FareHarbor for booking. Additional analytics, email, or newsletter tools may be connected later.",
-          "Before launch, review and update this page to reflect the final providers, hosting, analytics setup, and newsletter tooling actually in use."
+          "This MVP stores booking requests submitted through the website. Payment and confirmation email flows are still placeholders, and third-party providers such as payment gateways, analytics, email platforms, or CRM tools may be connected later.",
+          "Before launch, review and update this page to reflect the final hosting setup, analytics configuration, payment providers, and email or newsletter tooling actually in use."
         ]
       }
     ]
@@ -33,15 +33,15 @@
       {
         "heading": "1. Website purpose",
         "paragraphs": [
-          "The website presents information about tours, trust notes, and contact options, and routes guests to external booking pages operated through FareHarbor.",
-          "The site does not process payments directly and does not provide user accounts in this MVP phase."
+          "The website presents information about tours, trust notes, contact options, and a launch-stage booking request flow for guided walking tours in Hamburg.",
+          "The site does not yet process real payments directly and does not provide user accounts in this MVP phase."
         ]
       },
       {
         "heading": "2. Bookings and cancellations",
         "paragraphs": [
-          "Specific booking availability, payments, cancellation rules, and booking confirmations are governed by the relevant FareHarbor booking page for each tour.",
-          "Guests should review the booking conditions shown at the point of reservation before completing a purchase."
+          "Booking requests submitted through the MVP are stored for manual review and follow-up until a full payment provider and automated confirmation system are connected.",
+          "Guests should review the final booking conditions, payment terms, and cancellation rules shown at the point of confirmation before completing a purchase."
         ]
       },
       {

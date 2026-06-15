@@ -1,77 +1,104 @@
 {
   "hero": {
-    "eyebrow": "Vetted halal experiences in Hamburg",
-    "title": "Authentic",
-    "accent": "Heritage",
-    "description": "A refined guide to Hamburg for Muslim travellers, with halal-friendly food tours, heritage walks, and carefully researched city experiences.",
-    "primaryCtaLabel": "View tours",
-    "primaryCtaHref": "/tours",
-    "secondaryCtaLabel": "Our approach",
-    "secondaryCtaHref": "#trust",
+    "eyebrow": "Halal in Hamburg -> family friendly & mindful travel",
+    "title": "A refined guide to Hamburg for",
+    "accent": "Muslim travellers",
+    "description": "Discover Hamburg through halal-friendly food tours, heritage walks, and carefully researched city experiences in various languages, designed for families, couples, small groups, and thoughtful travellers.",
+    "primaryCtaLabel": "Book a Muslim-Friendly Tour",
+    "primaryCtaHref": "/booking",
+    "secondaryCtaLabel": "View Halal Tours",
+    "secondaryCtaHref": "/tours",
+    "tertiaryCtaLabel": "Choose a Time Slot",
+    "tertiaryCtaHref": "/booking",
     "image": "/images/hero-hamburg.svg",
-    "imageAlt": "Editorial illustration evoking a warm, premium Hamburg city atmosphere",
-    "asideLabel": "Reliable service",
-    "asideValue": "01"
-  },
-  "intro": {
-    "eyebrow": "Editorial, practical, trustworthy",
-    "title": "An authentic approach to",
-    "highlight": "halal living.",
-    "description": "We combine warm hospitality with real research: halal-vetted food stops, culturally rich walking routes, and a calmer introduction to Hamburg for guests who want clarity before they book.",
-    "image": "/images/intro-editorial.svg",
-    "imageAlt": "Editorial placeholder art for a warm, design-led travel introduction",
-    "stats": [
+    "imageAlt": "Warm editorial illustration of Hamburg for a Muslim-friendly walking tour brand",
+    "asideLabel": "Mindful city discovery",
+    "asideValue": "5 tours",
+    "highlights": [
+      "Prayer-break awareness",
+      "Halal food recommendations",
+      "Family-friendly pacing",
+      "Private tour options"
+    ],
+    "metrics": [
       {
-        "label": "Thoroughly vetted",
-        "value": "100%"
+        "label": "Tour styles",
+        "value": "Public & private"
       },
       {
-        "label": "Direct booking",
-        "value": "Fast"
+        "label": "Languages",
+        "value": "EN · DE · AR"
       },
       {
-        "label": "Support style",
-        "value": "Personal"
+        "label": "Booking flow",
+        "value": "Simple online inquiry"
       }
     ]
   },
-  "positioning": "Each experience is written and presented to answer the questions Muslim visitors actually have: where halal confidence comes from, what the pace feels like, and whether the route suits couples, families, and thoughtful first-time guests.",
+  "intro": {
+    "eyebrow": "Thoughtful local guidance",
+    "title": "A warmer way to discover",
+    "highlight": "Hamburg.",
+    "description": "Halal in Hamburg exists for Muslim travellers who want the richness of the city without navigating uncertainty around food, atmosphere, or prayer spaces. We believe Hamburg deserves a better introduction than nightlife-heavy itineraries or vague food recommendations.",
+    "image": "/images/intro-editorial.svg",
+    "imageAlt": "Editorial illustration representing guided walking tours through Hamburg",
+    "stats": [
+      {
+        "label": "Muslim-friendly planning",
+        "value": "Built in"
+      },
+      {
+        "label": "Recommended tour length",
+        "value": "2-3 hrs"
+      },
+      {
+        "label": "Private tours",
+        "value": "Available"
+      }
+    ]
+  },
+  "positioning": "Our tours suit travellers who want to experience real Hamburg culture. Whether Muslim or not, and wherever you are from, we are happy to welcome you and shape an experience that feels personal, flexible, and grounded in the city we grew up in.",
   "trustPoints": [
     {
       "number": "01",
-      "title": "Halal-vetted experiences",
-      "description": "Tours are written with transparent halal notes instead of vague labels, so guests know what has been checked and where they may want to ask more."
+      "title": "Authentic and personal",
+      "description": "Our tours are designed to feel authentic and personal, with real local context, calm pacing, and an introduction to the Hamburg we know from everyday life rather than generic sightseeing scripts."
     },
     {
       "number": "02",
-      "title": "Culture over cliché",
-      "description": "The routes focus on architecture, neighborhoods, waterfront history, and good food rather than nightlife-heavy tourism patterns."
+      "title": "Transparent and thoughtful",
+      "description": "We are honest about what we know, what we verify, and how we define halal-friendly recommendations. We stay in contact with local mosques and imams so we do not share uncertainty casually."
     },
     {
       "number": "03",
-      "title": "Premium but easy to use",
-      "description": "Clear tour cards, thoughtful copy, and direct FareHarbor booking links keep the booking path quick without sacrificing trust."
+      "title": "Local knowledge with practical value",
+      "description": "Beyond the walk itself, we help guests find the parts of Hamburg that are truly worth their time, including food, mosques, parks, neighborhoods, and founder-curated PDFs for the rest of the trip."
     }
   ],
   "valueSection": {
-    "description": "The launch experience is designed to feel like a boutique travel concierge: lighter on noise, stronger on signal, and ready for fast founder-led iteration.",
+    "description": "The experience is designed to feel respectful, polished, and trustworthy from the first click to the day of the tour.",
     "points": [
       {
-        "kicker": "For Muslim travellers",
-        "title": "Halal suitability is part of the experience design",
-        "description": "Food-focused tours begin from halal confidence, and non-food routes still carry practical notes so guests are not left guessing."
+        "kicker": "For families and groups",
+        "title": "Personalisation before you arrive",
+        "description": "You can let us know your wishes before your visit and we will do our best to shape the experience around your pace, interests, and practical needs."
       },
       {
-        "kicker": "For families and couples",
-        "title": "Pacing that feels thoughtful, not rushed",
-        "description": "Routes are framed around realistic walking times, welcoming neighborhoods, and experiences that feel calm rather than over-programmed."
+        "kicker": "For authentic travel",
+        "title": "A city introduction beyond tourist traps",
+        "description": "We want to show you beautiful sites, peaceful neighborhoods, worthwhile attractions, and hidden gems instead of beer tours or overpriced stop-and-rush tourism."
       },
       {
-        "kicker": "For launch speed",
-        "title": "A site structure ready for growth",
-        "description": "The MVP uses structured JSON content, reusable components, and direct outbound booking links so new tours can be added without a CMS rebuild."
+        "kicker": "For your wider trip",
+        "title": "Helpful extras beyond the tour",
+        "description": "We also provide free PDFs such as mosque and food guides so your holiday in Hamburg stays easier even after the tour ends."
       }
     ]
+  },
+  "testimonial": {
+    "quote": "We are Sofiane and Momar, two young Muslims who grew up in a city we love and care for. We want to show you the best parts of Hamburg with honesty, warmth, and real local perspective.",
+    "attribution": "Founder note",
+    "title": "A local welcome from Sofiane and Momar"
   },
   "faqPreviewCount": 4
 }

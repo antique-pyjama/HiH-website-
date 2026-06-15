@@ -1,10 +1,16 @@
-import alsterHalalFoodWalk from "@/content/tours/alster-halal-food-walk.json";
-import ottensenBrunchDiscovery from "@/content/tours/ottensen-brunch-discovery.json";
-import speicherstadtHeritageWalk from "@/content/tours/speicherstadt-heritage-walk.json";
-import { Tour } from "@/lib/types";
+import customPrivateTour from "./custom-private-tour.json";
+import familyPrivateTour from "./family-private-tour.json";
+import halalFoodCultureTour from "./halal-food-culture-tour.json";
+import harborRiversideTour from "./harbor-riverside-tour.json";
+import hamburgOldTownWalk from "./hamburg-old-town-walk.json";
+import speicherstadtHafencityWalk from "./speicherstadt-hafencity-walk.json";
+import type { Tour } from "../../lib/types";
 
 export const tours: Tour[] = [
-  alsterHalalFoodWalk as Tour,
-  ottensenBrunchDiscovery as Tour,
-  speicherstadtHeritageWalk as Tour,
+  hamburgOldTownWalk as Tour,
+  speicherstadtHafencityWalk as Tour,
+  harborRiversideTour as Tour,
+  halalFoodCultureTour as Tour,
+  familyPrivateTour as Tour,
+  customPrivateTour as Tour,
 ];

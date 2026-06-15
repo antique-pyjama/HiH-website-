@@ -1,0 +1,60 @@
+{
+  "slug": "custom-private-halal-in-hamburg-tour",
+  "title": "Custom Private Halal in Hamburg Tour",
+  "shortDescription": "A tailored private walking experience shaped around your interests, schedule, and Muslim-friendly preferences.",
+  "fullDescription": "This is the most flexible option in the collection. Guests can request a route that emphasizes old town heritage, waterfront views, family comfort, halal-conscious food planning, or a softer orientation around prayer and daily rhythm. It is ideal for travellers who want Hamburg explained in a way that feels personal and thoughtfully arranged.",
+  "heroImage": "/images/intro-editorial.svg",
+  "heroImageAlt": "Illustration for a custom private Halal in Hamburg walking tour",
+  "gallery": [
+    "/images/intro-editorial.svg",
+    "/images/speicherstadt.svg"
+  ],
+  "duration": "3 hours",
+  "priceFrom": "€290 private group",
+  "basePrice": 290,
+  "pricingMode": "private_group",
+  "meetingPoint": "Agreed after booking request",
+  "meetingNeighborhood": "Custom",
+  "category": ["Private Tour", "Custom Itinerary", "Walking Tour"],
+  "muslimFriendlyFeatures": [
+    "Custom route planning around prayer timing and food needs",
+    "Can prioritize halal-conscious recommendations",
+    "Suitable for private family, couple, or friend groups",
+    "Adjustable pace and route focus"
+  ],
+  "included": [
+    "Private tailored tour planning",
+    "Customized walking route",
+    "Optional recommendations list after the tour"
+  ],
+  "excluded": [
+    "Paid attraction entry",
+    "Meals and refreshments",
+    "Transport arrangements unless added later"
+  ],
+  "audience": [
+    "Private groups",
+    "Repeat visitors with specific interests",
+    "Guests wanting the most flexibility"
+  ],
+  "routeHighlights": [
+    "Tailored around your priorities",
+    "Flexible neighborhood combinations",
+    "Useful local recommendations for the rest of your stay"
+  ],
+  "languages": ["English", "German", "Arabic upon request"],
+  "maxGroupSize": "Up to 8 guests",
+  "maxGuests": 8,
+  "timeSlots": ["10:00", "14:00", "18:00"],
+  "availabilityNote": "Best for guests with specific route requests or private group needs.",
+  "featured": true,
+  "active": true,
+  "bookingProvider": "Internal booking placeholder",
+  "bookingUrl": "/booking?tour=custom-private-halal-in-hamburg-tour",
+  "faq": [
+    {
+      "question": "Can we request a women-only or private family format?",
+      "answer": "You can mention that preference in the booking notes and we can plan accordingly where possible."
+    }
+  ]
+}

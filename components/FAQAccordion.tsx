@@ -10,11 +10,12 @@ export function FAQAccordion({ items }: FAQAccordionProps) {
       {items.map((item, index) => (
         <details
           key={item.question}
-          className="rounded-[1.75rem] bg-panel px-6 py-5 shadow-soft open:bg-white"
+          className="rounded-[1.75rem] border border-white/60 bg-panel px-6 py-5 shadow-soft open:bg-white"
           open={index === 0}
         >
-          <summary className="cursor-pointer list-none pr-8 text-lg font-semibold tracking-tight text-primary">
-            {item.question}
+          <summary className="flex cursor-pointer list-none items-start justify-between gap-6 pr-1 text-lg font-semibold tracking-tight text-primary">
+            <span>{item.question}</span>
+            <span className="mt-0.5 text-secondary">+</span>
           </summary>
           <p className="mt-4 max-w-3xl text-base leading-8 text-foreground-muted">
             {item.answer}

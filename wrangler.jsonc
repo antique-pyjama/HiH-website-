@@ -1,17 +1,36 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "name": "halalhamurg",
+  "name": "halalhamburg",
   "compatibility_date": "2026-04-09",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "workers_dev": true,
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  "routes": [
+    {
+      "pattern": "halalhamburg.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.halalhamburg.com",
+      "custom_domain": true
+    }
+  ],
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "halalhamurg"
+      "service": "halalhamburg"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "BOOKINGS_DB",
+      "database_name": "halalhamburg-bookings",
+      "database_id": "da0803b3-b61f-4f71-9ff0-3e73d2e2ea54",
+      "migrations_dir": "migrations"
     }
   ],
   "images": {

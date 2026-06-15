@@ -1,8 +1,30 @@
 "use server";
 
+import { createBookingRequest, paymentLabels, BookingValidationError } from "@/lib/bookings";
+import { BookingRequestInput } from "@/lib/types";
+
 export type FormState = {
   status: "idle" | "success" | "error";
   message: string;
+};
+
+export type BookingConfirmation = {
+  bookingReference: string;
+  tourTitle: string;
+  date: string;
+  time: string;
+  guests: number;
+  totalPriceLabel: string;
+  paymentMethodLabel: string;
+  fullName: string;
+  email: string;
+  phone: string;
+  notes: string;
+  selectedPreferences: string[];
+};
+
+export type BookingActionState = FormState & {
+  confirmation?: BookingConfirmation;
 };
 
 export async function submitContactForm(
@@ -46,4 +68,53 @@ export async function submitNewsletterForm(
     status: "success",
     message: "You are on the list. Connect a real newsletter provider here when launch data is ready.",
   };
+}
+
+export async function submitBookingRequest(
+  input: BookingRequestInput,
+): Promise<BookingActionState> {
+  try {
+    const { booking } = await createBookingRequest(input);
+
+    // TODO: Start Stripe Checkout or a Payment Intent flow here for "card" payments.
+    // TODO: Redirect to a live PayPal checkout flow here for "paypal" payments.
+    // TODO: Send guest confirmation and internal notification emails after persistence succeeds.
+
+    return {
+      status: "success",
+      message:
+        booking.paymentMethod === "arrival"
+          ? "Your booking request has been saved. We will follow up by email to confirm the details."
+          : `Your booking request has been saved. ${paymentLabels[booking.paymentMethod]} still needs a live provider integration before online checkout can happen.`,
+      confirmation: {
+        bookingReference: booking.bookingReference,
+        tourTitle: booking.tourTitle,
+        date: booking.date,
+        time: booking.time,
+        guests: booking.guests,
+        totalPriceLabel: booking.totalPriceLabel,
+        paymentMethodLabel: booking.paymentMethodLabel,
+        fullName: booking.fullName,
+        email: booking.email,
+        phone: booking.phone,
+        notes: booking.notes,
+        selectedPreferences: booking.selectedPreferences,
+      },
+    };
+  } catch (error) {
+    if (error instanceof BookingValidationError) {
+      return {
+        status: "error",
+        message: error.message,
+      };
+    }
+
+    console.error("Booking submission failed", error);
+
+    return {
+      status: "error",
+      message:
+        "We could not save your booking request just now. Please try again in a moment or contact us directly.",
+    };
+  }
 }

@@ -1,9 +1,9 @@
-import faqsJson from "@/content/faqs.json";
-import homepageJson from "@/content/homepage.json";
-import legalJson from "@/content/legal.json";
-import siteSettingsJson from "@/content/site-settings.json";
-import { tours } from "@/content/tours";
-import { FAQItem, HomepageContent, LegalContent, SiteSettings, Tour } from "@/lib/types";
+import faqsJson from "../content/faqs.json";
+import homepageJson from "../content/homepage.json";
+import legalJson from "../content/legal.json";
+import siteSettingsJson from "../content/site-settings.json";
+import { tours } from "../content/tours";
+import type { FAQItem, HomepageContent, LegalContent, SiteSettings, Tour } from "./types";
 
 export const siteSettings = siteSettingsJson as SiteSettings;
 export const homepageContent = {
