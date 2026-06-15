@@ -29,6 +29,8 @@ const paymentLabels: Record<PaymentMethod, string> = {
   arrival: "Pay on arrival",
 };
 
+const availablePaymentMethods: PaymentMethod[] = ["card", "arrival"];
+
 const preferenceLabels: Record<keyof PreferencesState, string> = {
   prayerBreakInfo: "Need prayer break information",
   halalFoodRecommendations: "Interested in halal food recommendations",
@@ -164,6 +166,10 @@ export function BookingPageClient({
           paymentMethod,
           guests,
         });
+
+        if (result.checkoutUrl) {
+          window.location.assign(result.checkoutUrl);
+        }
       }
     });
   };
@@ -183,7 +189,7 @@ export function BookingPageClient({
           <p className="mt-5 max-w-xl text-lg leading-8 text-white/78">
             Your booking request has been saved in the system. We can now keep a real record of
             your chosen tour, date, guests, and preferences while automatic email notifications and
-            live online payments are still being connected.
+            online card payments are handled securely through Stripe.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <div className="rounded-[1.5rem] bg-white/10 p-5">
@@ -446,7 +452,7 @@ export function BookingPageClient({
             Choose a payment option
           </h2>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {(Object.keys(paymentLabels) as PaymentMethod[]).map((method) => (
+            {availablePaymentMethods.map((method) => (
               <button
                 key={method}
                 type="button"
@@ -466,8 +472,8 @@ export function BookingPageClient({
                 </p>
                 <p className="mt-3 text-sm leading-6 text-foreground-muted">
                   {method === "arrival"
-                    ? "Useful for simple booking requests while online payment is still being connected."
-                    : "Placeholder payment UI only. Real provider integration still needs to be added."}
+                    ? "Reserve now and settle payment directly with us later."
+                    : "Pay securely by card through Stripe Checkout after your booking is saved."}
                 </p>
               </button>
             ))}
@@ -500,8 +506,8 @@ export function BookingPageClient({
             </div>
           </div>
           <p className="mt-5 max-w-2xl text-sm leading-6 text-foreground-soft">
-            Booking requests are now stored on the backend. Stripe, PayPal, and automatic
-            confirmation emails still need to be connected before full live checkout is ready.
+            Booking requests are stored before payment. Card payments continue through Stripe
+            Checkout; pay-on-arrival requests are sent for manual confirmation.
           </p>
           <button
             type="submit"
@@ -513,7 +519,13 @@ export function BookingPageClient({
                 : "cursor-not-allowed bg-surface-high text-foreground-soft",
             )}
           >
-            {isPending ? "Saving booking..." : "Confirm booking request"}
+            {isPending
+              ? paymentMethod === "card"
+                ? "Preparing checkout..."
+                : "Saving booking..."
+              : paymentMethod === "card"
+                ? "Continue to secure checkout"
+                : "Confirm booking request"}
           </button>
           {showErrors && !isValid ? (
             <p className="mt-4 text-sm text-secondary">

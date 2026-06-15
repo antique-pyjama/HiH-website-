@@ -20,8 +20,8 @@
       {
         "heading": "3. Third-party services",
         "paragraphs": [
-          "This MVP stores booking requests submitted through the website. Payment and confirmation email flows are still placeholders, and third-party providers such as payment gateways, analytics, email platforms, or CRM tools may be connected later.",
-          "Before launch, review and update this page to reflect the final hosting setup, analytics configuration, payment providers, and email or newsletter tooling actually in use."
+          "This MVP stores booking requests submitted through the website. Card payments are processed through Stripe Checkout when online payment is selected, while pay-on-arrival requests are stored for manual follow-up.",
+          "Before launch, review and update this page to reflect the final hosting setup, analytics configuration, email tooling, newsletter tooling, and any additional CRM integrations actually in use."
         ]
       }
     ]
@@ -34,13 +34,13 @@
         "heading": "1. Website purpose",
         "paragraphs": [
           "The website presents information about tours, trust notes, contact options, and a launch-stage booking request flow for guided walking tours in Hamburg.",
-          "The site does not yet process real payments directly and does not provide user accounts in this MVP phase."
+          "The site uses Stripe Checkout for online card payments and does not provide user accounts in this MVP phase."
         ]
       },
       {
         "heading": "2. Bookings and cancellations",
         "paragraphs": [
-          "Booking requests submitted through the MVP are stored for manual review and follow-up until a full payment provider and automated confirmation system are connected.",
+          "Booking requests submitted through the MVP are stored for manual review and follow-up. Card payment requests continue through Stripe Checkout, while pay-on-arrival requests are handled manually.",
           "Guests should review the final booking conditions, payment terms, and cancellation rules shown at the point of confirmation before completing a purchase."
         ]
       },

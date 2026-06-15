@@ -128,8 +128,8 @@ export default async function TourDetailPage({ params }: TourDetailPageProps) {
                 Ask a question first
               </CTAButton>
               <p className="text-sm leading-6 text-foreground-soft">
-                Your booking request will be saved as soon as you submit it. Payment and automatic
-                email confirmation flows are still placeholder integrations for now.
+                Your booking request is saved before payment. Card payments continue through secure
+                Stripe Checkout; pay-on-arrival requests are confirmed manually.
               </p>
             </div>
           </aside>

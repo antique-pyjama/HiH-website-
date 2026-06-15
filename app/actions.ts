@@ -1,6 +1,7 @@
 "use server";
 
-import { createBookingRequest, paymentLabels, BookingValidationError } from "@/lib/bookings";
+import { createBookingRequest, BookingValidationError } from "@/lib/bookings";
+import { createStripeCheckoutSession, StripeConfigurationError } from "@/lib/stripe";
 import { BookingRequestInput } from "@/lib/types";
 
 export type FormState = {
@@ -25,6 +26,7 @@ export type BookingConfirmation = {
 
 export type BookingActionState = FormState & {
   confirmation?: BookingConfirmation;
+  checkoutUrl?: string;
 };
 
 export async function submitContactForm(
@@ -74,18 +76,31 @@ export async function submitBookingRequest(
   input: BookingRequestInput,
 ): Promise<BookingActionState> {
   try {
+    if (input.paymentMethod === "paypal") {
+      return {
+        status: "error",
+        message: "PayPal is not connected yet. Please choose card payment or pay on arrival.",
+      };
+    }
+
     const { booking } = await createBookingRequest(input);
 
-    // TODO: Start Stripe Checkout or a Payment Intent flow here for "card" payments.
-    // TODO: Redirect to a live PayPal checkout flow here for "paypal" payments.
+    if (booking.paymentMethod === "card") {
+      const checkoutSession = await createStripeCheckoutSession(booking);
+
+      return {
+        status: "success",
+        message: "Your booking request has been saved. Redirecting you to secure Stripe checkout.",
+        checkoutUrl: checkoutSession.url ?? undefined,
+      };
+    }
+
     // TODO: Send guest confirmation and internal notification emails after persistence succeeds.
 
     return {
       status: "success",
       message:
-        booking.paymentMethod === "arrival"
-          ? "Your booking request has been saved. We will follow up by email to confirm the details."
-          : `Your booking request has been saved. ${paymentLabels[booking.paymentMethod]} still needs a live provider integration before online checkout can happen.`,
+        "Your booking request has been saved. We will follow up by email to confirm the details.",
       confirmation: {
         bookingReference: booking.bookingReference,
         tourTitle: booking.tourTitle,
@@ -103,6 +118,13 @@ export async function submitBookingRequest(
     };
   } catch (error) {
     if (error instanceof BookingValidationError) {
+      return {
+        status: "error",
+        message: error.message,
+      };
+    }
+
+    if (error instanceof StripeConfigurationError) {
       return {
         status: "error",
         message: error.message,

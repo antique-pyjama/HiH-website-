@@ -40,7 +40,8 @@ Open `http://localhost:3000`.
 ## Notes
 
 - The site includes a dedicated booking request flow with real request persistence.
-- Online payments and automatic email confirmations are still placeholder integrations.
+- Stripe Checkout is wired for online card payments when `STRIPE_SECRET_KEY` is configured.
+- Automatic email confirmations are still a placeholder integration.
 - Contact and newsletter forms use placeholder server actions and should be connected before launch.
 - Replace placeholder artwork and legal details before going live.
 
@@ -56,6 +57,18 @@ Example Cloudflare setup:
 npx wrangler d1 create halalhamburg-bookings
 npx wrangler d1 migrations apply BOOKINGS_DB --remote
 ```
+
+## Stripe Checkout
+
+Card payments use Stripe Checkout through the server action in `app/actions.ts`.
+
+Required production secret:
+
+```bash
+npx wrangler secret put STRIPE_SECRET_KEY
+```
+
+Use the Stripe test secret key while testing. Switch to a live Stripe secret key only after the Stripe account is fully activated and prices/legal terms are ready.
 
 ## Cloudflare deployment
 

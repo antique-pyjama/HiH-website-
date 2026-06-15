@@ -52,8 +52,7 @@ export function Footer() {
             © {new Date().getFullYear()} {siteSettings.siteName}. All rights reserved.
           </p>
           <p>
-            Booking, payment, and email confirmations currently use placeholder logic pending real
-            provider integration.
+            Booking requests are stored securely; card payments are handled through Stripe Checkout.
           </p>
         </div>
       </div>
