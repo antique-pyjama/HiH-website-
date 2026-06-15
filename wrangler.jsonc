@@ -11,12 +11,12 @@
   },
   "routes": [
     {
-      "pattern": "halalhamburg.com",
-      "custom_domain": true
+      "pattern": "halalhamburg.com/*",
+      "zone_name": "halalhamburg.com"
     },
     {
-      "pattern": "www.halalhamburg.com",
-      "custom_domain": true
+      "pattern": "www.halalhamburg.com/*",
+      "zone_name": "halalhamburg.com"
     }
   ],
   "services": [
