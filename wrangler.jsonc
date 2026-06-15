@@ -29,7 +29,7 @@
     {
       "binding": "BOOKINGS_DB",
       "database_name": "halalhamburg-bookings",
-      "database_id": "da0803b3-b61f-4f71-9ff0-3e73d2e2ea54",
+      "database_id": "5dd02e0f-ec30-40be-a25e-26a23d6c7039",
       "migrations_dir": "migrations"
     }
   ],
